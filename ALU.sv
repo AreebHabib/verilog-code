@@ -6,6 +6,7 @@ module ALU(
 // logic [31:0]temp;
 // temp=alu_opr2;
 always_comb begin : ALU_operation
+	//adding a comment for future
         case(alu_op)
             4'h1: alu_out=alu_opr1 + alu_opr2;                          //ADD
             4'h2: alu_out=alu_opr1 - alu_opr2;                          //SUBTRACT
